@@ -1,0 +1,43 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: arial, helvetica, sans-serif;
+  background-color: #ddd;
+  line-height: 1.65;
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.whatsapp-icon {
+  float: right;
+  clear: both;
+  margin: 20px;
+  z-index: 9999;
+  animation: blinking 1s infinite; /* Menerapkan animasi berkedip */
+  text-decoration: none; /* Menghilangkan garis bawah dari tautan */
+}
+
+/* Hiasan untuk teks "klik disini" */
+.whatsapp-icon i {
+  color: #008080; /* Warna teal, Anda bisa menggantinya sesuai keinginan */
+  transition: transform 0.3s; /* Efek transisi untuk hover */
+  font-size: 16px;
+}
+
+.whatsapp-icon:hover i {
+  transform: scale(1.1); /* Membuat teks membesar saat di-hover */
+}
